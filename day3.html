@@ -24,6 +24,96 @@
     </table>
     <!--Ab yaha tr ka matlab hua jese hum Div, Span likhte he vese hi he ye. th ka matlab hua ki heading, Aur td ka matlab huaki data-->
     <!--That's it aur hame isko likha ese table>caption>tr>td*2+th*2 aur enter maara-->
+    <hr>
+
+    <!--Ab yaha hum Colspan aur Rowspan dekhenge-->
+    <p><b>Colspan:</b><i>Iska use multiple column banaane ke liye kiya jaata hai</i></p>
+    <p><b>Rowspan:</b><i>Iska use multiple row banaane ke liye kiya jaata hai</i></p>
+
+    <p>Ye dono hi attributes hai</p>
+    <table border="1">
+        <caption>Food Names</caption>
+        <tr>
+            <th rowspan="2">Item</th>
+            <th colspan="2">Price</th>
+        </tr>
+        <tr>
+            <th>INR</th>
+            <th>USD</th>
+        </tr>
+        <tr>
+            <td>Frooti</td>
+            <td>10</td>
+            <td>0.4</td>
+        </tr>
+        <tr>
+            <td>Samosa</td>
+            <td>20</td>
+            <td>0.17</td>
+        </tr>
+        <tr>
+            <td>chips</td>
+            <td>28</td>
+            <td>0.28</td>
+        </tr>
+    </table>
+
+    <p><u>Now this is the Practice Question</u></p>
+    <table border="1">
+        <caption>A test table with merged cells</caption>
+        <tr>
+            <th rowspan="2"></th>
+            <th colspan="2">Average</th>
+            <th rowspan="2">Red Eyes</th>
+        </tr>
+        <tr>
+            <th>Hight</th>
+            <th>Weight</th>
+        </tr>
+        <tr>
+            <td>Males</td>
+            <td>1.9</td>
+            <td>0.003</td>
+            <td>40%</td>
+        </tr>
+        <tr>
+            <td>Female</td>
+            <td>1.7</td>
+            <td>0.002</td>
+            <td>43%</td>
+        </tr>
+    </table>
+    <p><b>Note:</b>Jese ki yaha dikh raha he 1st box khali he to "Ha usme kuchh nahi bhara hua hai. Isliye vo khali hi dikhega." Yaha par sirf usko kitne ROW ki jagh chahiye vo likh diya that's it. RED EYES me bhi ye hi tha ki usko 2 ROW jitna space chahiye tha to usko diya nahi to vo uppar vale dibbe me hi rehta.</p>
+    <hr>
+    <!--Ab hum yaha Forms ko padhne vale hai-->
+    <p><b>Forms in HTML</b></p>
+    <p>Isme bus normal si baat hai ki hum form kese banate he aur aurka kese use karte he HTML me. Aur isme bohot saare attributes hote he jinko hum padhenge.</p>
+    <p><b>Action attribute: </b>Isme bus simple he ki jo form humne bhara hai usko submit karne ke baad hum redirect kaha honge. Dusra ki submit button ko dabane par vo DATA kaha jaayega</p>
+
+    <p><b>Form Elements</b></p>
+    <p><u>Input: </u>Same isme bhi bohot saare type ke inputs hote he aur Input ke attributes hote he jaise type, name, value, placeholder etc.</p>
+
+    <form>
+        <input type="submit">
+        <input type="password" placeholder="Enter here password">
+        <input type="time">
+        <input type="date">
+        <input type="file">
+    </form>
+
+    <p><b>Label: </b><i>Label bhi yaha div, span ki tarh use hota he. Lakin yaha par ye hote he jese ki humne text likha username aur uske aage input daal diya to hum log username ke text par click karenge to vo username vale dabbe ko hi show karega. Exp:</i></p>
+    <form>
+        <label>
+            Username: <input type="text">
+        </label>
+    </form>
+    <p>Ab dekho yaha me username par click karunga to vo mujhe us dabbe ko show karega.</p>
+
+    <p><u>Ab hm yaha classical approach dekhenge Label ka</u></p>
+    <form>
+        <label for="username">Enter Here Username: </label>
+        <input type="text" id="username" placeholder="Likh be yaha likh tu">
+    </form>
     
 </head>
 
