@@ -157,16 +157,61 @@
     <input type="radio" id="Apple" name="Fruit">
     <label for="Apple">Apple</label>
 
-    <input type="radio" id="Mango" name="Fruit">
+    <input type="radio" id="Mango" name="Fruit"> <!--Ab yaha hamne name="Fruit" likha he na is liye inka alag group ban gaya-->
     <label for="Mango">Mango</label>
 
     <input type="radio" id="Banana" name="Fruit">
     <label for="Banana">Banana</label>
-     
-    
 
+    <p>Ab yaha hum <b>Select Element</b> ka <i>Dropdown</i> padhenge.</p>
+    Select your car baby &#128663;
+    <select name="cars" id="cars">
+        <option value="volvo">volvo</option>
+        <option value="BMW">BMW</option>
+        <option value="Audi">Audi</option>
+        <option value="Maclaren">Maclaren</option>
+        <option value="Porsche">Porsche</option>
+    </select>
 
+    <p>Bhai ab hum iske 2nd last Point <b>Range</b> par aa gaye he</p>
+    <label for="volume">Volume</label>
+    <input type="range" min="0" max="100">
+
+    <p>Ab ye is day 3 file ka last topic shayad uske baad questions ho. <b>Textarea</b> bhai ye mera sabsde favouret topic he.</p>
     
+    <label for="message">Please Feedback do</label> <br>
+    <textarea id="message" name="message" rows="5" cols="20" placeholder="Likh be yaha se..."></textarea>
+    <hr>
+
+    <!--Chalo bhai ye question bhi kar lete he-->
+    <p>Q. First name, last name, & select male female & Agree checkbox & Register button</p>
+    <form action="index.html" target="_blank">
+    <label for="First_name">First name: </label>
+    <input id="First_name" type="text" placeholder="First name">
+
+    <label for="Last_name">Last name: </label>
+    <input id="Last_name" type="text" placeholder="Last name">
+
+    <p>Select your gender:</p>
+    <select name="gender" id="gender">
+        <option value="male">Male</option>
+        <option value="female">Female</option>
+        <option value="confused">Confused</option>
+    </select>
+
+    <p>OR</p>
+    <input type="radio" id="male" name="gender">
+    <label for="male">Male</label>
+
+    <input type="radio" id="female" name="gender">
+    <label for="female">Female</label>
+
+    <input type="radio" id="confused" name="gender">
+    <label for="confused">Confused</label>
+
+    <p>Accept kar nahi to goli maar dunga <input type="checkbox" id="agree"> Kar diya saheb.</p>
+    <button type="submit">Register</button>
+    </form>  
 </head>
 
 <body>

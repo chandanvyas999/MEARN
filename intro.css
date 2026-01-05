@@ -1,0 +1,13 @@
+/*Kya be tum logo ko kya laga hum yaha nahi daalenge comment?*/
+/*CSS: Cascading style sheets*/
+/*Isme Selector, Property aur Value hota hai*/
+/*Selector ki mujhe kaha kya change karna he usko koi na koi to title dunga hi na. To vo yaha likhte he*/
+/*Property: Jo cheez me change karna chahta hu uska naam*/
+/*Value: Jo naya change karna chahta hu uska naam*/
+/*Ab yaha Inline style ka matlab hoga he ki hum HTML me hi style ka use karen*/
+/*Ab dusra ho gaya ki header me jaake style tag ka use karna*/
+h1{
+    color: purple;
+}
+/*Finally CSS ki shuruaat hui*/
+/*Ab teesra ho gaya external CSS jisme hum alag se ek file banayenge jiska naam intro.css rakhte he aur usme hum apna CSS code likhenge*/
