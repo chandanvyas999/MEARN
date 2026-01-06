@@ -6,8 +6,34 @@
 /*Value: Jo naya change karna chahta hu uska naam*/
 /*Ab yaha Inline style ka matlab hoga he ki hum HTML me hi style ka use karen*/
 /*Ab dusra ho gaya ki header me jaake style tag ka use karna*/
-h1{
-    color: purple;
-}
 /*Finally CSS ki shuruaat hui*/
 /*Ab teesra ho gaya external CSS jisme hum alag se ek file banayenge jiska naam intro.css rakhte he aur usme hum apna CSS code likhenge*/
+
+/*Text alogn hame batata he ki hum kaha daalana chahte he is text ko*/
+h1{
+    text-align: center;
+    color: blue;
+    /*Iska matlab hota he ki hum kisi text ke niche underline daale*/
+    text-decoration: underline;
+}
+
+
+h3{
+    text-align: right;
+    width: 70%;
+    /*Ab ye Sir par chhat banate he*/
+    text-decoration: overline;
+}
+
+/*Font weight hame text ko kitna bold karna he aur kitna light ye karne ko allow karta he aur yaha 400=Normal he*/
+h2{
+    font-weight: 90;
+}
+
+p{
+    /*Ye line cut karta he*/
+    text-decoration: double line-through; /*Isme mene double likha he isliye hame do line dikhti he*/
+    line-height: 2.5; /*Is se hame lamba lamba gap dekhne ko milta he lines ke bich me*/
+    letter-spacing: 5px; /*Is se latters ke bichme gap aata he*/
+
+}
