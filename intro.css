@@ -35,5 +35,9 @@ p{
     text-decoration: double line-through; /*Isme mene double likha he isliye hame do line dikhti he*/
     line-height: 2.5; /*Is se hame lamba lamba gap dekhne ko milta he lines ke bich me*/
     letter-spacing: 5px; /*Is se latters ke bichme gap aata he*/
-
+    font-size: 10px; /*Ab ye Font siz ko set karta he lakin isme problem he ki mobile ke liye bhi iska size fix rahega esa nahi ki audjest ka le nahi, Ye vese ka vesa hi rehta he. Uske liye hum log Relative values ka use karte he. Jese ki "%" jese kuchh*/
+}
+/*Hum isme alag alag type ke fonts use karke dekhenge*/
+p2{
+    font-family: fantasy;
 }
