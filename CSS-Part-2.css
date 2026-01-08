@@ -1,0 +1,27 @@
+/*Ab hum yaha selectors sikhenge*/
+
+/*This is select for all*/
+*{
+    font-family: "Courier New";
+}
+
+/*This is for selected element*/
+h1, h3{
+    color: #b92b27;
+}
+
+/*This is for ID selector*/
+#login{
+    background-color: white;
+}
+
+#signup{
+    background-color: #b92b27;
+    color: white;
+}
+
+/*This is for class selector*/
+.upvote{
+    background-color: green;
+    color: white;
+}
