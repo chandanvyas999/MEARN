@@ -1,0 +1,26 @@
+/*Basically Question is this..
+Implement the following CSS for the given HTML document.
+
+. Set font family for entire document to Courier New
+. Set text color for all H1 Headings tp #1b74e4
+. Set background color for Search button to black and text to white.
+. Set background color for login and signup button to aqua.*/
+
+/*Chalo Start karte he. Vese to aasaan he*/
+
+*{
+    font-family: "Courier New";
+}
+
+h1{
+    color: #1b74e4;
+}
+
+#searchbtn{
+    background-color: black;
+    color: white;
+}
+
+.userbtn{
+    background-color: aqua;
+}

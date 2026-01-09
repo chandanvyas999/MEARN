@@ -25,3 +25,77 @@ h1, h3{
     background-color: green;
     color: white;
 }
+
+/*This is for descendant selector*/
+/*First select outer and then inner(element)*/
+main a {
+    color: chocolate;
+    background-color: yellow;
+}
+
+nav ul li{
+    color: hotpink;
+}
+
+/*Adjacent Sibling Selector*/
+/*Rule: Selects elements that are immediately after another element. Here I mention Immediatelt So remember this*/
+p + h3{
+    text-decoration: underline;
+}
+
+.upvote + button{
+    background-color: rgb(0, 255, 213);
+}
+
+/*Child Combinator*/
+li > a{
+    letter-spacing: 5px;
+}
+
+/*Attribute Selector*/
+input[type="text"] {
+    color: rgb(255, 45, 210);
+}
+
+input[type="password"] {
+    color: cyan;
+}
+
+/*Pseudo Class*/
+/*Rule: Dono ke beech me ghadi vaha : iska sign hona jaroori he. Nahi to kaam nahi karega*/
+/*Is se cursor ke aate hi effect padne lagega*/
+button:hover {
+    background-color: black;
+    color: white;
+}
+h3:hover {
+    text-decoration: overline;
+}
+
+/*Is se cursor ke click karne se change hoga*/
+button:active {
+    background-color: hotpink;
+    color: black;
+}
+p:active {
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+input[type="radio"]:checked + label {   /*Yaha Sibiling Property show hoti he cause baar baar hame lines leni hoti he aur label net line ka hi he to...*/
+    color: green;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+/*nth-of-type*/
+/*Hame isko number dena padata he ki isko kaha perform karna he. Abhi nebe yaha even likha he to ye even me hi perform karega*/
+h3:nth-of-type(even) {
+    background-color: moccasin;
+}
+
+/*Pseudo Element*/
+/*Isme hum log specific element me changes dekhte he.*/
+/*Ab yaha Quors ka 1st latter change ho gaya.*/
+h1::first-letter {
+    color: rgb(85, 0, 255);
+}

@@ -1,0 +1,16 @@
+div {
+    background-color: lightcoral;
+}
+
+form {
+    color: rgba(6, 17, 18, 0.86);
+}
+
+/*Buttons and Inputs are bydefault never inherit we neend to inherit specially*/
+input, button {
+    background-color: inherit;
+}
+
+button:hover {
+    background-color: yellow;
+}
