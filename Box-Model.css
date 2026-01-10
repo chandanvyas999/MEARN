@@ -1,0 +1,44 @@
+/*We are doing here something for understanding box model*/
+
+/*Here we will see height and width properties*/
+div {
+    height: 200px;
+    width: 300px;
+    background-color: rgb(241, 251, 174);
+    /*Now Border Width, Style, Color*/
+    /*border-width: 5px;
+    border-style: solid;
+    border-color: rgb(126, 18, 18);*/
+    
+    /*Border Shorthand*/
+    /*Jo mene upper 3 lines me likha he usko hum 1 line me likh sakate he just like for loop*/
+    border: 5px solid pink;
+
+    /*Now Border Sides*/
+    /*Isme apni marji ke side ka hum color change kar sakate he*/
+    border-left-color: blue;
+    border-left-style: dotted;
+
+    /*Now Border Radius*/
+    border-radius: 10%;
+
+    /*Now Padding*/
+    padding: 5%;
+
+    /*Now Margin*/
+    margin: 20px;
+}
+
+button {
+    border-radius: 45%;
+    padding: 20px;
+    border: 5px solid black;
+    background-color: lightcoral;
+    letter-spacing: 5px;
+    margin: 10px;
+    margin-left: 110px;
+}
+
+h1 {
+    margin-left: 70px;
+}
