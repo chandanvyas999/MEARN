@@ -1,0 +1,33 @@
+.Face {
+    height: 400px;
+    width: 400px;
+    background-color: yellow;
+    border-radius: 50%;
+}
+
+.mouth {
+    height: 100px;
+    width: 250px;
+    background-color: brown;
+    border-radius: 0px 0px 50px 50px;
+    position: absolute;
+    top: 220px;
+    left: 85px;
+}
+
+.Left-eye , .Right-eye {
+    height: 50px;
+    width: 50px;
+    background-color: black;
+    border-radius: 50%;
+    display: inline-block;
+    position: absolute;
+    top: 90px;
+    left: 70px;
+}
+
+.Right-eye {
+    position: absolute;
+    left: 285px;
+}
+
