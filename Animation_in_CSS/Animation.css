@@ -1,0 +1,106 @@
+/*.box {
+    height: 100px;
+    width: 300px;
+    background-color: violet;
+    border: 2px solid black;
+    /*animation-name: colorAnimate;
+    animation-duration: 1s;
+    animation-timing-function: ease-in;
+    animation-delay: 0;
+    animation-iteration-count: infinite;
+    animation-direction: normal;*/
+
+    /*Animation Shorthand*/
+    /*animation: FontAnimation 5s ease-in 0s infinite normal;
+}*/
+
+
+
+/*Hum log ese bhi kar sakate he*/
+/*@keyframes FontAnimation {
+    0% {
+        background-color: indigo;
+    }
+    28.56% {
+        background-color: blue;
+    }
+    42.84% {
+        background-color: green;
+    }
+    57.12% {
+        background-color: yellow;
+    }
+    71.40% {
+        background-color: orange;
+    }
+    85.68% {
+        background-color: red;
+    }
+    100% {
+        background-color: #4B1F3F;
+    }
+}
+*/
+/*@keyframes FontAnimation {
+    from {
+        font-size: 20px;
+        background-color: aqua;
+    }
+    to {
+        font-size: 40px;
+        background-color: burlywood;
+        border-radius: 30%;
+    }
+}
+*/
+
+/*@keyframes colorAnimate {
+    from {
+        background-color: aqua;
+    }
+    to {
+        background-color: burlywood;
+    }
+}*/
+
+/*Now This is for Media Quiries*/
+
+h1 {
+    background-color: yellow;
+    border: 2pd solid black;
+}
+
+@media (width: 400px) {
+    h1 {
+        background-color: red;
+        color: white;
+    }
+    div {
+        height: 100px;
+        width: 100px;
+        background-color: blue;
+    }
+}
+
+@media (min-width: 700px) {
+    h1 {
+        background-color: greenyellow;
+    }
+}
+
+@media (max-width: 300px) {
+    h1 {
+        background-color: goldenrod;
+    }
+}
+
+@media (max-width: 200px)  and (max-width: 200px){
+    h1 {
+        background-color: magenta;
+    }
+}
+@media (orientation: landscape) {
+    h1 {
+        background-color: aquamarine;
+    }
+}

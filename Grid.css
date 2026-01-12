@@ -2,6 +2,11 @@
     height: 300px;
     width: 600px;
     background-color: rgb(24, 156, 156);
+    display: grid;
+    /*grid-template-rows: 50px 50px 50px 50px;
+    grid-template-columns: 200px 200px 200px;*/
+    /*    grid-template-columns: repeat(5, 1fr);*/
+    /*grid-template-rows: repeat(5, 1fr);*/
 }
 
 .item {
@@ -10,7 +15,6 @@
     background-color: yellowgreen;
     border: 2px solid black;
     text-align: center;
-    display: grid;
 }
 
 h1 {
