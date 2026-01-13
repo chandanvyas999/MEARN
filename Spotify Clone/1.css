@@ -1,0 +1,100 @@
+body {
+     font-family: "Montserrat", sans-serif;
+     margin: 0;
+     background-color: black;
+     color: white;
+     overflow: hidden;
+}
+
+/*Hamne yaha flex isliye use kya kyoki isko ek hi line me laana tha*/
+/*100vh ka matlab 100% screen cover karna(view port)*/
+/*To ab pehli line left side lagegi aur baaki 2 screen ke 50%-50% me*/
+/*2nd me content hoga aur 3rd me gaana jo niche bajata he vo. Fixed navbar*/
+.main {
+    display: flex;
+    height: 100vh;
+}
+
+.sidebar {
+    background-color: black;
+    width: 350px;
+    border-radius: 1rem;  /*1 rem = 16px*/
+}
+
+/*Flex me 1 k matlab baaki ki khali space ye hi lega. 1 akela*/
+/*Overflo ka matlab side me scrollbar mil jaaye tab jarurat ho tab*/
+.main-content {
+    background-color: #121212;
+    flex: 1;
+    border-radius: 1rem;  /*1 rem = 16px*/
+    overflow: auto;
+}
+
+/*Position fix rakhni hi he*/
+/*Bure bottom se hi rakhna he*/
+/*Width to pura lena hi he aur height aukaat ke hisaab mil gayi*/
+.music-player {
+    background-color: black;
+    position: fixed;
+    bottom: 0;
+    height: 70px;
+    width: 100%;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+/*Dekha pehle dles karke 1 line me kiya aur baad me column deke vertical me kiya*/
+/*Justify content se ab ye beech me aa gaya*/
+/*baad me Padding de di*/
+.nav {
+    background-color: #121212;
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100px;
+    padding: 0.5rem 0.75rem;
+}
+
+/*Dono ko juda karne ke liye line height daal diya*/
+.nav-option {
+    line-height: 2.5rem;
+    opacity: 0.5;
+    padding: 0.5rem;
+    padding-left: 0.75rem;
+}
+
+/*Home ki fix opacity HTML se set kari gayi he*/
+.nav-option:hover {
+    line-height: 2.5rem;
+    opacity: 1;
+}
+
+.nav-option i {
+    font-size: 1.25rem;
+}
+
+.nav-option a {
+    font-size: 1rem;
+    margin: 1rem;
+}
+
+/*Ab hum yaha library ke saath bi kuchh masti kar rahe he*/
+.library {
+    background-color: #121212;
+    border-radius: 1rem;
+}
+
+
+/*Icons ko ek line me laana*/
+.options {
+    display: flex;
+}
+
+.lib-option img {
+    height: 1.25rem;
+    width: 1.25rem;
+}
