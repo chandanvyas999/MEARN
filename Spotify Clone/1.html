@@ -39,7 +39,8 @@
             <!--This is our Library Section-->
             <div class="library">
                 <div class="options">
-                    <div class="lib-option">
+                    <!--Ab yaha library me nav option daal diya taaki ye vese hi act kare nav option ki tarh-->
+                    <div class="lib-option nav-option">
                     <img src="library_icon.png" alt="library-icon">
                     <a href="#">Your Library</a>
                 </div>
@@ -50,11 +51,132 @@
                     <i class="fa-solid fa-arrow-right"></i>
                 </div>
                 </div>
-                <div class="boxes"></div>
+
+                <!--Ab Yaha sidebar ke section me library ke niche jo box he usko design karenge-->
+                <div class="lib-box">
+
+                    <!--Ye saara kaam Box 1 me hua-->
+                    <div class="box">
+                        <p class="box-p1">Create your First playlist</p>
+                        <p class="box-p2">It's easy, we'll help you.</p>
+                        <button class="badge">Creaye Playlist</button>
+                    </div>
+
+                    <!--Ye saara kaam Box 2 me hua-->
+                    <div class="box">
+                        <p class="box-p1">Let's find some podcast to follow</p>
+                        <p class="box-p2">We'll keep you updated on new episodes</p>
+                        <button class="badge">Browse Podcast</button>
+                    </div>
+                </div>
             </div>
         </div>
-        <div class="main-content">main Content</div>
-        <div class="music-player">music Player</div>
+
+        <!--Content vale area ke liye likh rahe he jisne 100% jagh li thi-->
+        <div class="main-content">
+            <!--Ye ab sabse uppar vale navbar ke liye dib banaya he-->
+            <div class="sticky-nav">
+                <!--Navbar ka ye left part-->
+                <div class="sticky-nav-icons">
+                    <img src="backward_icon.png">
+                    <img src="forward_icon.png" class="hide">
+                </div>
+                <!--Navbar ka ye Right side vala part-->
+                <div class="sticky-nav-options">
+                    <button class="badge nav-item hide">Explore Premium</button>
+                    <button class="badge nav-item dark-badge"> <i class="fa-regular fa-circle-down"></i> Install App</button>
+                    <i class="fa-regular fa-user nav-item"></i>
+                </div>
+            </div>
+
+            <h2>Recently Played</h2>
+            <div class="cards-sontainer">
+                <div class="card">
+                    <img src="card1img.jpeg" class="card-img">
+                    <p class="card-title">Top 50 - Global</p>
+                    <p class="card-info">Your daily updete of the most played tracks right...</p>
+                </div>
+            </div>
+
+            <!--Next Section ke liye-->
+            <h2>Trending now near you</h2>
+            <div class="cards-container">
+                <!--First Card of next section-->
+                <div class="card">
+                    <img src="card2img.jpeg" class="card-img">
+                    <p class="card-title">Mahiye Jinna Sohna</p>
+                    <p class="card-info">Dada Ji ko ye gaana kabhi pasand nahi aata...</p>
+                </div>
+
+                <!--Second Card of next section-->
+                <div class="card">
+                    <img src="card3img.jpeg" class="card-img">
+                    <p class="card-title">Mere Paas Tum Ho - (Lofi Mix 1 Min Music)</p>
+                    <p class="card-info">Ye pakka hi pasand aata dada ji ko...</p>
+                </div>
+
+                <!--Third Card of next section-->
+                <div class="card">
+                    <img src="card4img.jpeg" class="card-img">
+                    <p class="card-title">Thalapathi Special</p>
+                    <p class="card-info">All songs are here fore sure you'll love these...</p>
+                </div>
+            </div>
+
+            <!--Third Section ke liye-->
+            <h2>Featured Songs</h2>
+            <div class="cards-container">
+                <!--First Card of Third section-->
+                <div class="card">
+                    <img src="card5img.jpeg" class="card-img">
+                    <p class="card-title">Top Songs - Global</p>
+                    <p class="card-info">What is world hear, Your daily updete of the most played tracks right...</p>
+                </div>
+
+                <!--First Card of Third section-->
+                <div class="card">
+                    <img src="card6img.jpeg" class="card-img">
+                    <p class="card-title">Top Songs - India</p>
+                    <p class="card-info">What is India hear, Your daily updete of the most played tracks right...</p>
+                </div>
+
+                <!--First Card of Third section-->
+                <div class="card">
+                    <img src="card1img.jpeg" class="card-img">
+                    <p class="card-title">Top 50 - Global</p>
+                    <p class="card-info">What is happening in global listen right now on spotify...</p>
+                </div>
+            </div>
+
+            <!--Ab aa gaye hum apne website ke footer par-->
+            <div class="footer">
+                <div class="line"></div>
+            </div>
+        </div>
+        <!--Ab hum yaha Footer ke part ko design karenge-->
+            <div class="music-player">
+                <!--Ye ab Sabse left vala part he-->
+                <div class="album"></div>
+
+                <!--Ye ab center vala part he-->
+                <div class="player">
+                    <div class="player-controls">
+                        <img src="player_icon1.png" class="player-control-icon">
+                        <img src="player_icon2.png" class="player-control-icon">
+                        <img src="player_icon3.png" class="player-control-icon" style="opacity: 1; height: 2rem;">
+                        <img src="player_icon4.png" class="player-control-icon">
+                        <img src="player_icon5.png" class="player-control-icon">
+                    </div>
+                    <div class="playback-bar">
+                        <span class="curr-time">00:00</span>
+                        <input type="range" min="0" max="100" class="progress-bar">
+                        <span class="tot-time">3:33</span>
+                    </div>
+                </div>
+
+                <!--Ye ab Sabse Right vala part he-->
+                <div class="controls"></div>
+        </div>
     </div>
 </body>
 </html>

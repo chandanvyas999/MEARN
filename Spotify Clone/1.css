@@ -10,15 +10,18 @@ body {
 /*100vh ka matlab 100% screen cover karna(view port)*/
 /*To ab pehli line left side lagegi aur baaki 2 screen ke 50%-50% me*/
 /*2nd me content hoga aur 3rd me gaana jo niche bajata he vo. Fixed navbar*/
+/*Isko thoda sa right side me karne ke liye padding di he.*/
 .main {
     display: flex;
     height: 100vh;
+    padding: 0.5rem;
 }
 
 .sidebar {
     background-color: black;
     width: 350px;
     border-radius: 1rem;  /*1 rem = 16px*/
+    margin-right: 0.5rem;
 }
 
 /*Flex me 1 k matlab baaki ki khali space ye hi lega. 1 akela*/
@@ -28,6 +31,7 @@ body {
     flex: 1;
     border-radius: 1rem;  /*1 rem = 16px*/
     overflow: auto;
+    padding: 0 1.5rem 0 1.5rem;
 }
 
 /*Position fix rakhni hi he*/
@@ -83,18 +87,226 @@ a {
 }
 
 /*Ab hum yaha library ke saath bi kuchh masti kar rahe he*/
+/*Ab jo yaha space bachi he vo saari library ki he to 100% ho jaayegi*/
 .library {
     background-color: #121212;
     border-radius: 1rem;
+    height: 100%;
+    margin-top: 0.5rem;
+    padding: 0.5rem 0.75rem;
 }
 
 
 /*Icons ko ek line me laana*/
+/*Flex ke baad hamesha yaad rakhna ab usko hatana he ro justify content laga do*/
 .options {
     display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .lib-option img {
     height: 1.25rem;
     width: 1.25rem;
+}
+
+.icons {
+    font-size: 1.25rem;
+    display: flex;
+}
+
+.icons i {
+    opacity: 0.7;
+    margin-right: 1rem;
+}
+
+.icons i:hover {
+    opacity: 1;
+}
+
+/*Ab hum log yaha se box ko edit ya design karenge*/
+
+.box {
+    background-color: #232323;
+    height: 8rem;
+    border-radius: 1rem;
+    margin: 0.75rem 0 1.75rem 0;
+    padding: 0.75rem 1rem;
+}
+
+
+/*Ye first line ke liye he*/
+.box-p1 {
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+/*Ye second line ke liye he*/
+.box-p2 {
+    font-size: 0.85rem;
+    opacity: 0.9;
+}
+
+/*Ye ab button ke liye*/
+.badge {
+    background-color: white;
+    border: none;
+    border-radius: 100px;
+    padding: 0.25rem 1rem;
+    font-weight: 700;
+    margin-top: 0.5rem;
+    height: 2rem;
+    width: fit-content;
+}
+
+/*Ab hum apne badge ke colour change kar rahe he jesa ki vaha clone me design he vese hi*/
+.dark-badge {
+    background-color: black;
+    color: white;
+}
+
+/*Ab yaha Sticky navbar ke liye humlog code likhenge*/
+/*Sticky Navbar: Ye vo navbar hote he jo fix rehte he. Usko jaha jagh batayi vo vahi rehta he chup-chaap. Samajhdaar he bichara*/
+
+.sticky-nav {
+    position: sticky;
+    top: 0;
+    background-color: #121212;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 0 1rem 0;
+    z-index: 10;    /*Iska use tab hota he jab hame kisi ko sabse uppar batana ho. Jese sticky me vo fix rehta he baaki saare uske paas se nikal jaate he to agar hum chahte he to sirf navbar dikhe to isliye hum isko use karte he.*/
+}
+
+/*Ab ye Us sticky ke jo right side me icons he uske liye design bana raha hu*/
+.sticky-nav-icons {
+    margin-left: 0.75rem;
+}
+
+/*Ab hum uske left past ke liye design karenge*/
+.sticky-nav-options {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-item {
+    margin: 1rem;
+}
+
+/*Ab ye hamne isko ese set kiya ki function kese work karenge jab phone me ho ya laptop me*/
+@media (max-width: 1000px) {
+    .hide {
+        display: none;
+    }
+}
+
+/*Ab hum yaha card ke saath khilvaad karenge*/
+.card {
+    background-color: #232323;
+    width: 150px;
+    border-radius: 1rem;
+    padding: 1rem;
+    margin-top: 1rem;
+    margin-left: 1.5rem;
+}
+
+.cards-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.card-img {
+    width: 100%;
+    border-radius: 0.5rem;
+}
+
+.card-title {
+    font-weight: 600;
+}
+
+.card-info {
+    opacity: 0.9;
+    font-size: 0.75rem;
+}
+
+/*Ab aa gaye hu sabse niche vale section me Footer vale section par*/
+.footer {
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.line {
+    width: 90%;
+    height: 50%;
+    opacity: 0.4;
+    border-top: 1px solid white;
+}
+
+/*Ab ji 3 bhaag honge unki jagh fix karne jaa rahe he*/
+.music-player {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.album {
+    width: 25%;
+}
+
+.player {
+    width: 50%;
+}
+
+.controls {
+    width: 25%;
+}
+
+/*Abhi Hum log sirf bich vale par kaam kare rahe he*/
+.player-controls {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.player-control-icon {
+    height: 1rem;
+    margin-right: 1.75rem;
+    opacity: 0.7;
+}
+
+.player-control-icon:hover {
+    opacity: 1;
+}
+
+.playback-bar {
+    display: flex;
+    justify-content: center; 
+    align-items: center;   
+}
+
+.progress-bar {
+    width: 70%;
+    appearance: none;  /*Is se jo chrome default design deta he vo show nahi hoga aur hum apne hisaab se hi kisi ko bhi design kar sakate he*/
+    background-color: transparent;
+    cursor: pointer;
+}
+
+/*Ye CSS ki alag functionally he jisko use karne se hum is music vale icon ko starting se bana sakate he*/
+.progress-bar::-webkit-slider-runnable-track {
+    background-color: #ddd;
+    border-radius: 100px;
+    height: 0.2rem;
+}
+
+.progress-bar::-webkit-slider-thumb {
+    appearance: none;
+    height: 1rem;
+    width: 1rem;
+    background-color: #1bd760;
+    border-radius: 50%;
+    margin-top: -6px;
 }
