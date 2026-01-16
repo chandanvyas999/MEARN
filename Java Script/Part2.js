@@ -1,5 +1,153 @@
-// console.log("Hello bhaije ki haal chaal????");
-// console.log("Me Narendra das damodar modi");
+console.log("Hello bhaije ki haal chaal????");
+console.log("Me Narendra das damodar modi");
+
 let a = 15;
 let b = 16;
 console.log("The sum is: ", (a+b));
+
+let kachha = 100;
+let baniyan = 80;
+console.log("Tera last paisa ", kachha + baniyan , "hua re");
+
+//Ek to ye tarika hua jis se e likh sakata hu lakin ek dusra batate he
+// Yaha par simplly us string ko agar hum ek variable me daal de to...
+
+let output = ("Tera total: " + (kachha + baniyan) + " hua re");
+console.log(output);
+
+//Ab dekho isko karne ka is se bhi aasaan tarika
+let finalPrice = `Tera last paisa he: ${kachha + baniyan}`;
+console.log(finalPrice);
+
+// Ab yaha apun dekhenge operators
+// Comparision for non-numbers
+let num = 'a' > 'A'
+console.log(num)  // Matlab ki ese hi kuchh likhenge re
+
+// Ab If Statement
+let age = 23;
+if (age >= 18)
+{
+    console.log("Tu 18 se uppar he mere bhai tu adult ho gaya")   
+}
+
+//Le bhai traffic light bana diya
+let color = "yellow";
+if (color == "green") {
+    console.log("Chalte baniye");
+}
+if (color == "red") {
+    console.log("Ruko be kaha bhage jaa rahe ho");
+}
+if (color == "yellow") {
+    console.log("Chal gadi start kar");
+}
+
+//Ab Else dekhte he
+let boy = 13;
+if(boy >= 14) {
+    console.log("He is a man")
+} else {
+    console.log("He is a child")
+}
+
+//Ab else if dekhta he 
+let girl = 15;
+if(girl >= 15) {
+    console.log("She's women")
+}
+else if (girl < 15)
+{
+    console.log("She's girl")
+}
+
+//Practice Question Popcorn Price in sizes
+let size = "S";
+
+if (size === "XL") {
+    console.log("Popcorn 250 ka he")
+} else if (size === "L") {
+    console.log("Popcorn 200 ka he")
+} else if (size === "M") {
+    console.log("Popcorn 100 ka he")
+} else if (size === "S") {
+    console.log("Popcorn 50 ka he")
+} else {
+    console.log("Size se pehle poket check kar")
+}
+
+//Nested if else 
+let marks = 20;
+
+if (marks >= 30 ) {
+    if (marks >= 80) {
+        console.log("A Grade")
+    }
+    else{
+        console.log("B Grade")
+    }
+}
+else {
+    console.log("Ab tere papa ko result jayega");
+}
+
+//Logical Operator
+let maths = 60;
+if ((maths >= 30) && (maths >= 80)) {   //AB yaha mera outpur nahi aa raha kyoki dono conditin setify nahi he. Kyoki ye 80 ye uppar nahi he. Agar me yaha maths<=80 karta to paas bhi dihta. Ya abhi iske bich me || (OR) ka use kaunto jaroor dikhega. Kyoki usme koi 1 condition paas honi jaroori he
+    console.log("Paas he bhai");
+}
+else {
+    console.log("Result 30-80 ke beech me nahi he")
+}
+
+//Bhai mast question he dekh
+//Q. A "good string" is a string that starts with the letter 'a' & has a length > 3. wrp to find a string is good or not
+//Bhai logic bhale hi pata ho lakin "" ya '' ka use sahi se nahi kiya to... answer hi nahi aayega.
+let str = "apple";
+if ((str[0] === 'a') && (str.length > 3)) {
+    console.log("String is good")
+}
+else{
+    console.log("Not a good string")
+}
+
+//Final output batana tha par me yaha code likh deta hu
+let wo = 12;
+if ((wo % 4 === 0) && (wo + 1 === 12 || wo - 1 === 11)) {
+    console.log("Safe he bhai")
+}
+else {
+    console.log ("Unsafe he bhai")
+}
+
+//Switch Case
+let co = "Red";
+switch(co) {
+    case "Red" :
+        console.log("Gaadi rok de bhai");
+        break;
+    case "Yellow" :
+        console.log("Gadi start kar bhai");
+        break;
+    case "Green" :
+        console.log("Bhagaaa Bhaaaiiii Bhagaaa");
+        break;
+    default :
+        console.log("Bhai Tere baap ki hi Road samajh");
+}
+
+// Alert & Prompt
+// Bhai jab hum kisi chij ko galat daal dete he to hame message aata he na plz fill the form correctfully ya phir ki koi chij chhoot gayi he vo hi ab hum samjhenge.
+//Ye hi alert me hota he
+//alert("Bhai aukaat me. Jo bola he vo likh na");
+
+//Ye hame uski jagh kuchh likhne ko bolega. Hum likh kar OK karenge to hi hame aage ka kuchh dikhega nahi to nahi dikhega.
+//prompt("Laude likh yaha")
+
+//Prompt ko hum kuchh ese bhi se kar sakate
+/*let ao = prompt("Bhai apna pehla naam likh");
+let bo = prompt("Bhai apni jaati likh");
+let eo = "Welcome" + ao + bo + "!";
+alert(eo);*/
+
+
