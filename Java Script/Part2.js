@@ -151,3 +151,85 @@ let eo = "Welcome" + ao + bo + "!";
 alert(eo);*/
 
 
+//Is se aaage aur pichhe vale space hat jaate he
+let fo = "   Hello   ";
+console.log(str.trim());
+
+//To upper and lower case
+let go = 'Chandan Vyas';
+console.log(go.toUpperCase());
+console.log(go.toLowerCase());
+
+//indexOf (It shows only positions of that letter)
+let ho = 'Mr.ChandanVyas'
+console.log((ho.indexOf('C')));
+
+//Method chaining 
+//Iska matlab hua agataar ek hi word me arguments paas karna
+let io = '    chagdgebydcb    ';
+console.warn((io.toUpperCase().trim()));
+
+//Slice
+//JAha tak ka number diya he vaha tak ka cut kar dega
+//2 number dete he to jaha se jaha tak ka dete he vaha tak ka rakhta he baaki cut
+//Aur ye 2nd vale me ye he ki iski total valu ka -4 kar raha he
+//Jese yaha total number of latters = 11 he. To 11-4=7 aur vaha 7 likhenge to bhi ye hi aayega answer. Check karke dekh lo
+let jo = 'ChandanVyas'
+console.log((jo.slice(7,11)));
+console.log((jo.slice(-4)));
+
+//Replace
+//Ab replace word bade hi simpally kaam karte he
+//Repeat me mo.repeat(2) to ye pura hi 2 baar likha jaayega
+let mo = 'ChandanVyas';
+console.log((mo.replace("Chandan","Lovely")));
+
+//Arrays
+let names = ["Chandan", "Sanjay", "Ajay", "Vijay","Dhanjay","Mritunjay"];
+console.log((names[5].toUpperCase()));
+//Now chandan is replace in same array. To this example we can understand arrays are mutable
+names[0] = 'Lovely';
+console.log((names[0].toUpperCase()));
+
+//Now Push, Pop, Unshift, Shift
+//Push = Add in end
+names.push("Chandan")
+console.log(names);
+//Pop = Delete from end
+names.pop();
+console.log(names);
+//Unshift = Add in start
+names.unshift("Chandan");
+console.log(names);
+//Shift = Delete from start
+names.shift();
+console.log(names);
+//Replace Ajay To kailash
+names[2] = 'Kailash';
+console.log(names);
+
+//Concat(2 Arrays ko Merge karna)
+let no = ["Meerut", "Tatti", "Sahar", "Hai"];
+let oo = ["Phalodi", "Acchi", "Jagh", "Hai"];
+let po = no.concat(oo);
+console.log(po);
+
+//Reverse karna
+console.log((po.reverse()));
+
+//Slice in Arrays
+console.log(po.slice(2));
+console.log(po.slice(2,3)); //Kyoki ye start point cover karke end point -1 cover karta he
+console.log(po.slice(-2));  //Ab ye piche se 2 word uthata he
+
+//Sort in Array
+let days = ["Monday", "Sunday", "Wednesday", "Tuesday"]  //Sorting based on alphabet
+console.log((days.sort()));
+
+let qo = [25 , 16 , 4 , 49 , 36 , 9];
+console.log((qo.sort()));
+
+//Nested Array
+let ro = [[1,2], [3,4], [5,6]];
+console.log([ro]);      //It shows 3 Array
+console.log([ro[2][1]]);   //Ye 2D array he 2nd no ke array ka 1st element that is 6
