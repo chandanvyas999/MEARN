@@ -113,3 +113,62 @@ for(chandan of baap) {
         console.log(tiwari)
     }
 }
+
+//Now Objects in Java script
+let Mera_Naam  = {
+    name: "Chandan",
+    age: 23,
+    marks: 44,
+};
+
+let post = {
+    username: "chandanvyas999",
+    content: "Videography",
+    likes: 200,
+    share: 900,
+    repost: 500,
+    tags: 700,
+};
+//To this we can get specific data form data page
+console.log(post.username); /*OR*/ console.log(post["username"]);
+//For Updating value
+post.content = "Photography";
+console.log(post["username"]);
+console.log(post);
+//For Adding value
+post.sizeOfKachha = 80;
+console.log(post["sizeOfKachha"]);
+console.log(post);
+
+//Nested Objects
+let bachha = {
+    chandan: {
+        maths: 10,
+        english: 12,
+        hindi: 90,
+        science: -8,
+    },
+
+    sanjay: {
+        maths: 3,
+        english: 1,
+        hindi: 80,
+        sciance: 10,
+    },
+
+    tarun: {
+        maths: 0,
+        english: 0,
+        hindi: 75,
+        science: 20,
+    },
+};
+
+console.log(bachha)
+bachha.tarun.maths = 10;
+console.log(bachha.tarun.maths);
+
+//Aur agar inhi chijo ko agar me {} isme na likh kar [] likh du to ye array ban jaayega.
+
+//Ye he apne Math object jo JS me prebuild hota he ye ek library ki tarh he isme kar saare default values he to unko hum is tarh se access kar sakate he. Yaha hamne PI likh kar pi ki value access ki he
+ console.log(Math.PI);
