@@ -18,3 +18,18 @@ function roleDice() {
 }
 
 roleDice();
+
+//Function with arguments pass
+function printName(name , age) {
+    console.log(`My name is ${name} and age is ${age}`);
+}
+//Function used
+printName("Chandan", 23);
+
+//Ab mujhe table print karvana he jo bhi mujhe number dega uska 
+function printTable(number) {
+    for (let i=1; i<=10; i++) {
+        console.log(`${number} X ${i} = ${number * i}`);
+    }
+}
+printTable(5);
