@@ -92,3 +92,61 @@ let bo = {
     }
 }
 bo.getAvg();
+
+//try & catch
+//try and catch ka kaam ye he ki ab yaha hamne "b" ko define nahi kiya th to code poora ruk gaya aur website crash ho gayi. To is chij ko solve karne ke liye hum try catch ka use karte he ki vaha ek bar catch ka code run karta he taaki programmer ko pata ho ki yaha error he. Ab aage vala code smoothly chalega. 
+try {
+    console.log(b);
+} catch {
+    console.log("Error hai bhai");
+}
+
+console.log("Program chal raha hai");
+
+//Arrow Function
+let a = 5;
+let b = 10;
+let Arrow = (a , b) => {
+    return a + b;
+}
+console.log(Arrow(a , b));
+
+//Shorter Arrow Function
+let ShortArrow = (a , b) => a + b;
+console.log(ShortArrow(a , b));
+
+//Set time out function
+//This is also a prebuild function just like MAth()
+//To pehle sum (funct, time)
+//To pehle time likh dena aur baad me function ko likh dena yaad rakhna ki "," lagana nahi bhulo.
+console.log("Pehle ye");
+setTimeout (() => {
+    console.log("Ye 2 sec baad print hoga")
+}, 2000);
+
+console.log("Ye 2nd par peint hoga")
+
+//"this" with arrow function and regular function diffrence
+let co = {
+    name: "Chandan",
+    marks: 90,
+    prop: this,     //Global scope
+    getName: function() {
+        console.log(this);
+        return this.name;
+    },
+    getMarks: () => {
+        console.log(this);    //Parent's scope -> window (global scope)
+        return this.marks;
+    },
+    getInfo1: function() {
+        setTimeout(() => {
+            console.log(this);  //Student
+        }, 2000)
+    },
+    getInfo2: function() {
+        setTimeout(function()  {
+            console.log(this);  //Window (global scope)
+        }, 2000)
+    }
+};
