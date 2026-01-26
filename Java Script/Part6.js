@@ -124,7 +124,7 @@ setTimeout (() => {
     console.log("Ye 2 sec baad print hoga")
 }, 2000);
 
-console.log("Ye 2nd par peint hoga")
+console.log("Ye 2nd par print hoga")
 
 //"this" with arrow function and regular function diffrence
 let co = {
@@ -150,3 +150,81 @@ let co = {
         }, 2000)
     }
 };
+
+//forEach Method
+let eo = [1 , 2 , 3 , 4 , 5];
+console.log("Ye 1st ethod ka he");
+let fo = function(el) {
+    console.log(el);
+}
+eo.forEach(fo);
+
+//OR
+console.log("Ye 2nd method ka he");
+eo.forEach(function(el) {
+    console.log(el);
+});
+
+//Ek baar mujhe samajh aayi ki arrow function me function nahi lata aur aage bus equal to me arrow lag jaata he. 
+
+//Same isko Arrow me likhne par
+console.log("Ye Arrow method ka he");
+eo.forEach ( (el) => {
+    console.log(el);
+});
+
+//Map Method
+console.log("Ab yaha Map Method use ho raha he");
+//Dono hi same same he koi diffrence nahi he mujhe esa lagata he.
+let go = [1, 2, 3, 4, 5, 6];
+let double = go.map ( (el) => {
+    console.log(el * 2);
+});
+
+//Filter Method
+console.log("Ab yaha Filter Method use ho raha he");
+
+let ho = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13];
+
+let filter = ho.filter ((ho) => (ho % 2 == 0));
+console.log(filter);
+
+//Every Method
+console.log("Ab yaha Every Method use ho raha he");
+console.log(ho.every ((ho) => (ho < 20)));
+//Ab ye true dega kyoki sabhi elements 20 se chhote he.
+let io = [1, 3, 5, 7, 9, 11];
+console.log(io.every ((io) => io % 2 == 0));
+//Ab ye false dega kyoki sabhi elements even nahi he.
+//Bus ye hi he every metod me baaki kuchh nahi hai.
+
+//Reduce Method
+console.log("Ab yaha Reduce Method use ho raha he");
+console.log([1,2,3,4,5].reduce ((ac, bc) => ac + bc));
+
+//Now find max using reduce
+console.log("Find Max");
+let jo = ho.reduce ((ac, bc) => {
+    return Math.max(ac, bc);
+});
+console.log(jo);
+
+//Default Parameters
+function ko (a, b=3) {
+    return a - b;
+}
+console.log(ko(4));  //Output 1
+console.log(ko(4, 2)); //Output 2
+
+//Desturucturing 
+let lo = ['Chandan', 'tarun', 'Ajay', 'Vjay'];
+
+let winner = lo[0];
+let Secondwinner = lo[1];
+let Thirdwinner = lo[2];
+
+console.log(winner , Secondwinner , Thirdwinner);
+
+//OR Destructuring karne se
+let [winner1 , Secondwinner2 , Thirdwinner3, ...others] = lo;
+console.log(winner1 , Secondwinner2, Thirdwinner3, ...others);
