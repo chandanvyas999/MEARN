@@ -9,3 +9,16 @@ div {
     border: 1px solid black;
     margin: auto;
 }*/
+
+/*Even Bubbling*/
+div {
+    height: 200px;
+    width: 400px;
+    background-color: lime;
+}
+li {
+    background-color: violet;
+}
+ul {
+    background-color: tomato;
+}

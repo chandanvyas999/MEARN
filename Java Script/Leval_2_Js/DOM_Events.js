@@ -69,7 +69,7 @@ form.addEventListener("submit", function() {
 });*/
 
 //Ab ye hum kar raha he data ko secure karne ke liye li agar koi form submitt hota he to uska data kaha save ho.
-let form = document.querySelector("form");
+/*let form = document.querySelector("form");
 form.addEventListener("submit", function(event) {
     event.preventDefault();
 
@@ -80,4 +80,25 @@ form.addEventListener("submit", function(event) {
     console.log(pass.value);
 
     alert(`Hii${user.value} Your password is set to ${pass.value}`)
+});*/
+
+//Event Bubbling
+let div = document.querySelector("div");
+let ul = document.querySelector("ul");
+let lis = document.querySelectorAll("li");
+
+div.addEventListener("click", function(event) {
+    console.log("Div cicked");
 });
+
+ul.addEventListener("click", function() {
+    event.stopImmediatePropagation();
+    console.log("ul clicked");
+});
+
+for (li of lis) {
+    li.addEventListener("click", function(event) {
+    event.stopImmediatePropagation();
+    console.log("list clicked");
+})
+};
