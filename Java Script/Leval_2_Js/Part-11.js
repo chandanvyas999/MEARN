@@ -107,7 +107,7 @@ let request = savetoDb("Chandan Vyas") //req = promise object
 
 //Async Function
 
-async function greet() {
+/*async function greet() {
     return "hello Bhai";
 }
 greet()
@@ -117,11 +117,11 @@ greet()
 })
 .catch ( (err) => {
     console.log("Promise was rejected with error", err);
-});
+});*/
 
 //Now awit keyword
 //Hum log await keyword ko hamesha hi sirf async function ke saath hi laga sakat he.
-function getNum() {
+/*function getNum() {
     return new Promise ( (resolve, reject) => {
         setTimeout( () => {
             let num = Math.floor(Math.random() * 10) + 1;
@@ -136,6 +136,67 @@ async function demo() {
     await getNum();
     await getNum();
     await getNum();
-}
+}*/
 
 //JASON data access in Javascript
+/*let url = "https://catfact.ninja/fact"
+
+fetch(url)
+.then ( (response) => {
+    console.log(response);
+    return response.json();
+})
+.then( (data) => {
+    console.log(data.fact);
+})
+.catch ((err) => {
+    console.log("ERROR - ", err);
+});*/
+
+//With using await and async
+/*let url = "https://catfact.ninja/fact"
+
+async function getFacts() {
+    try {
+        let res = await fetch(url);
+        let data = await res.json();
+        console.log(data.fact);
+    } catch (e) {
+        console.log("error -", e);
+    }
+    console.log("Bye Bye");
+};*/
+
+//With using Axios
+/*let url = "https://catfact.ninja/fact"
+
+async function getFacts() {
+    try {
+        let res = await axios.get(url);
+        console.log(res.data.fact);
+    } catch (e) {
+        console.log("error -", e);
+    }
+};*/
+
+//Try Something new
+
+let btn = document.querySelector("button");
+
+btn.addEventListener("click", async () => {
+    let fact = await getFacts();
+    console.log(fact)
+    let p = document.querySelector('#result');
+    p.innerText = fact;
+});
+
+let url = "https://catfact.ninja/fact"
+
+async function getFacts() {
+    try {
+        let res = await axios.get(url);
+        return res.data.fact;
+    } catch (e) {
+        return "no facts found";
+    }
+};
