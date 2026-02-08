@@ -199,4 +199,4 @@ async function getFacts() {
     } catch (e) {
         return "no facts found";
     }
-}
+};
