@@ -1,10 +1,19 @@
 const express = require("express")
 const app = express();
 
+//Ab ye public vale folder ko access karane ke liye
+const path = require("path");
+
 const port = 1001;
 
 app.set("view engine", "ejs");
 
+//Ab isme public vale path ko direct access kar sakate hai.
+app.set("views", path.join(__dirname, "views"));
+
+app.use(express.static(path.join(__dirname, "public")));
+
+//YE Home vala part he
 app.get("/", (req, res) => {
     res.render("home.ejs");
 });
