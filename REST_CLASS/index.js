@@ -7,14 +7,17 @@ app.use(express.urlencoded({extended : true}));
 
 let posts = [
     {
+        id: "1a",
         username: "helloji",
         content: "Kuchh nahi he"
     },
     {
+        id: "1b",
         username: "Mera naam he Bulla",
         content: "Rakhta hu khulla"
     },
     {
+        id: "1c",
         username: "Mera naam he Pote",
         content: "Jo apne baap ke bhi nahi hote"
     }
@@ -34,8 +37,15 @@ app.get("/posts/new", (req,res) => {
 })
 
 app.post("/posts", (req,res) => {
-    console.log(req.body)
-    res.send("post request is working")
+    let {username, content} = req.body;
+    posts.push({username, content})
+    res.redirect("/posts")
+})
+
+app.get("/posts/:id", (req,res) => {
+    let {id} = req.params;
+    let post = posts.find((p) => id === p.id);
+    res.render("show.ejs", {post});
 })
 
 app.listen(port, () => {
