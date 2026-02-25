@@ -18,7 +18,26 @@ const userSchema = new mongoose.Schema({
 
 const User = mongoose.model("User", userSchema);
 
-User.findOneAndUpdate({name : "Kya he be"}, {age : 34})
+//For Deleting Value
+//delete for single
+User.deleteMany({name : "Hulu Vyas"}).then((res) => {
+    console.log(res)
+});
+
+//Delete for multipule
+User.deleteMany({age : {$gt : 50}}).then((res) => {
+    console.log(res);
+});
+
+
+//For updating Value
+/*User.findOneAndUpdate({name : "Kya he be"}, {age : 34}).then((res) => {
+    console.log(res);
+})
+
+User.findOneAndUpdate({name : "Chandan Vyas"}, {age : 78}, {new : true}).then((data) => {
+    console.log(data);
+});*/
 
 /*User.updateOne({name : "Chandan Vyas"}, {name : "Kya he be"}).then(res => {
     console.log(res);
