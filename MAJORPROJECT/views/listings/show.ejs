@@ -1,0 +1,27 @@
+<!--Yaha hamne ejsMate use kiya he code ko reduce karne ke liye. {Source Code boilerplate.ejs}-->
+<% layout("/layouts/boilerplate") %>
+<body>
+    <h3>Listing All Details of : <i><%= listing.title %></i></h3>
+    <ul>
+        <li><b>Title: </b><%= listing.title %></li>
+        <li><b>Description: </b><%= listing.description %></li>
+        <li><b>Price: &#8377;</b><%= listing.price.toLocaleString("en-IN") %>/-</li>
+        <li><b>Location: </b><%= listing.location %></li>
+        <li><b>Country: </b><%= listing.country %></li>
+    </ul>
+
+    <br>
+
+    <a href="/listings/<%= listing.id %>/edit">Edit this Listing</a> <br><br>
+
+    <form method="post" action="/listings/<%= listing._id %>?_method=DELETE">
+        <button>Delete this listing</button>
+    </form>
+
+    <br><br>
+
+    <form action="http://localhost:5000/listings">
+        <button>Check Listings</button>
+    </form>
+
+</body>

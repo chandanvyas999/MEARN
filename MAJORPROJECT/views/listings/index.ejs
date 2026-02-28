@@ -1,0 +1,14 @@
+<!--Yaha hamne ejsMate use kiya he us se code reduce ho gaya {Source Code boilerplate.ejs}-->
+<% layout("/layouts/boilerplate") %>
+<body>
+    <h3>All Listings</h3> <br>
+    <!--<form action="/listings/new" method="get">
+        <button>Create New Listing</button>
+    </form>-->
+    <ul>
+        <% for (let listing of allListings) { %>
+            <li><a href="/listings/<%= listing._id %>"><%= listing.title %></a></li>
+            <li><a href="/listings/<%= listing._id %>"><%= listing.title %></a></li>
+        <% } %>
+    </ul>
+</body>

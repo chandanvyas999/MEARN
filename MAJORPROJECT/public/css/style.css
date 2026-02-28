@@ -1,0 +1,16 @@
+/*For NavBar*/
+.navbar {
+    height : 5rem;
+}
+
+/*Icon ke color ke liye*/
+.fa-compass {
+    color: #fe424d;
+    font-size: 2rem;
+}
+
+/*NabBar ke options ke liye he*/
+/*Ab yaha hamne !important isliye likha kyoki jab hum bootstrape use karte he to vo apne aap ko priority maanata he, So usko hi override karne ke liye hamne important likha nahi to hamari custom styiling add nahi hoti*/
+.nav-link {
+    color: #222222 !important;
+}
