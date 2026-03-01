@@ -5,10 +5,30 @@
     <!--<form action="/listings/new" method="get">
         <button>Create New Listing</button>
     </form>-->
-    <ul>
-        <% for (let listing of allListings) { %>
-            <li><a href="/listings/<%= listing._id %>"><%= listing.title %></a></li>
-            <li><a href="/listings/<%= listing._id %>"><%= listing.title %></a></li>
-        <% } %>
-    </ul>
+
+    <!--Yha ek row me 3 card dikhe isliye "1st div : row-cols-lg-3 && 2nd div : col"-->
+    <div class="row row-cols-lg-3 row-cols-md-2 row-cols-sm-1">
+    <!--Ab yaha hamne card ko define kiya he-->
+    <% for (let listing of allListings) { %>
+    
+    <!--AB yaha hum card ko anhor tag me daal rahe he taaki card par kahi bhi clisk ho to vouske show par jaaye-->
+    <a href="/listings/<%= listing._id %>" class="listing-link">
+    <div class="card col">
+    <img src="<%= (listing.image && listing.image.url) ? listing.image.url : (typeof listing.image === 'string' ? listing.image : 'https://images.unsplash.com/photo-1512917774080-9991f1c4c750?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D') %>" class="card-img-top" alt="Listing-image" style="height: 20rem;">
+    
+    <!--Ab ye hum card par hover karte he to kuchh blur ho isliye likha he-->
+    <div class="card-img-overlay"></div>
+    <div class="card-body">
+        <h5 class="card-title"><b><%= listing.title %></h5></b>
+        <p class="card-text">
+            <%= listing.description %> <br>
+            &#8377;<%= listing.price.toLocaleString("en-IN") %>/night
+        </p>
+        <!--This is also not bad agar anchor tag hata de to ye laga dena. Batter he-->
+        <!--<a href="/listings/<%= listing._id %>" class="btn btn-primary">Show Details</a>-->
+    </div>
+    </div>
+     <% } %>
+    </div>
+    </a>
 </body>
