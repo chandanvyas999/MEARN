@@ -1,27 +1,32 @@
 <!--Yaha hamne ejsMate use kiya he code ko reduce karne ke liye. {Source Code boilerplate.ejs}-->
 <% layout("/layouts/boilerplate") %>
-<body>
-    <h3>Listing All Details of : <i><%= listing.title %></i></h3>
-    <ul>
-        <li><b>Title: </b><%= listing.title %></li>
-        <li><b>Description: </b><%= listing.description %></li>
-        <li><b>Price: &#8377;</b><%= listing.price.toLocaleString("en-IN") %>/-</li>
-        <li><b>Location: </b><%= listing.location %></li>
-        <li><b>Country: </b><%= listing.country %></li>
-    </ul>
+<div class="row mt-3">
+    <div class="col-8 offset-3">
+    <h3><i><%= listing.title %></i></h3>
+    </div>
+    <div class="card col-6 offset-3 show-card">
+        <img src="<%= (listing.image && listing.image.url) ? listing.image.url : (typeof listing.image === 'string' ? listing.image : 'https://images.unsplash.com/photo-1512917774080-9991f1c4c750?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D') %>" class="card-img-top show-img" alt="listing-image">
+        <div class="card-body">
+            <p class="card-text">
+                <b><%= listing.title %></b> <br>
+                <%= listing.description %> <br>
+                &#8377;<%= listing.price.toLocaleString("en-IN") %>/- <br>
+                <i><%= listing.location %>,</i> <br>
+                <i><%= listing.country %></i> <br>
+            </p>
+        </div>
+    </div>
 
     <br>
-
-    <a href="/listings/<%= listing.id %>/edit">Edit this Listing</a> <br><br>
+</div>
+<div class="btns">
+    <a href="/listings/<%= listing.id %>/edit" class="btn btn-dark col-1 offset-4 edit-btn">Edit</a>
 
     <form method="post" action="/listings/<%= listing._id %>?_method=DELETE">
-        <button>Delete this listing</button>
+        <button class="btn btn-dark offset-2">Delete</button>
     </form>
-
-    <br><br>
 
     <form action="http://localhost:5000/listings">
-        <button>Check Listings</button>
+        <button class="btn btn-dark edit-btn" style="margin-left: 1rem;">Check Listings</button>
     </form>
-
-</body>
+</div>

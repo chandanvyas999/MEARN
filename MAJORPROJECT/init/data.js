@@ -347,6 +347,18 @@ const sampleListings = [
     location: "Costa Rica",
     country: "Costa Rica",
   },
+  {
+    title: "Chandan Ji Bhaisahab Ka Ghar",
+    description:
+      "Pushteini ghar he. 3 saal pehle hi bana hai. Saste me hi de raha hu lelo, Agar lena hai to nahi to call mat lagao faltu me kyoki mujhe aur bhi kaam hai",
+    image: {
+      filename: "listingimage",
+      url: "https://images.unsplash.com/photo-1580587771525-78b9dba3b914?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    },
+    price: 500000,
+    location: "Manali",
+    country: "India",
+  },
 ];
 
 module.exports = { data: sampleListings };
